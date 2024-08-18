@@ -550,9 +550,9 @@ def main():
             system2('cargo bundle --release --features ' + features)
             if osx:
                 system2(
-                    'strip target/release/bundle/osx/RustDesk.app/Contents/MacOS/rustdesk')
+                    'strip target/release/bundle/osx/MusicLoverRemote.app/Contents/MacOS/MusicLoverRemote')
                 system2(
-                    'cp libsciter.dylib target/release/bundle/osx/RustDesk.app/Contents/MacOS/')
+                    'cp libsciter.dylib target/release/bundle/osx/MusicLoverRemote.app/Contents/MacOS/')
                 # https://github.com/sindresorhus/create-dmg
                 system2('/bin/rm -rf *.dmg')
                 pa = os.environ.get('P')
