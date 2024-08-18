@@ -570,7 +570,7 @@ def main():
                 system2(
                     'create-dmg "RustDesk %s.dmg" "target/release/bundle/osx/MusicLoverRemote.app"' % version)
                 os.rename('RustDesk %s.dmg' %
-                          version, 'rustdesk-%s.dmg' % version)
+                          version, 'MusicLoverRemote-%s.dmg' % version)
                 if pa:
                     system2('''
     # https://pyoxidizer.readthedocs.io/en/apple-codesign-0.14.0/apple_codesign.html
