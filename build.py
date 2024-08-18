@@ -569,7 +569,7 @@ def main():
     '''.format(pa))
                 system2(
                     'create-dmg "MusicLoverRemote %s.dmg" "target/release/bundle/osx/MusicLoverRemote.app"' % version)
-                os.rename('RustDesk %s.dmg' %
+                os.rename('MusicLoverRemote %s.dmg' %
                           version, 'MusicLoverRemote-%s.dmg' % version)
                 if pa:
                     system2('''
